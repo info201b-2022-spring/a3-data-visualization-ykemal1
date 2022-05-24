@@ -1,0 +1,39 @@
+---
+title: "A3 hw"
+author: "Yousra Kemal"
+date: '2022-05-16'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+chooseCRANmirror(graphics = FALSE,ind = 1)
+source("a3_analysis.R")
+```
+
+## Yousra Kemals Analysis
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Hello My name is Yousra Kemal and I will be analyzing and comparing the incarceration rate between the black,white,latinx and aapi women prison population.I personally believe that there will be a higher black women incarceration rate due to the injustice faced against African Americans as well as discrimination and inequity. These graphs will prove to the close minded people how high the incarceration rate is and how black people are treated here in the United States.
+What I found through out my analysis is that that `r format(bwomen)` was the maximum prison incarceration rate for black women, where as the minimum incarceration rate was r format(aapi_female_prison_pop)' for Asian women in America. I compared all four races and found that the second to least lowest incarceration rate was `r format(wwomen)` which makes up for the white women prison population. From further analysis what I found from the year 2009 I found the lowest number to be `r format(lwomen)` coming from the asian population again and the highest number of incarceration from black women which was `r format(womenblack2009)`. All these numbers do not suprise me because there are more black women in the United States than Asian women. In closing my thesis was correct on how the prison population for females is majority black.
+
+
+```{r warning=FALSE, echo=FALSE, message=FALSE}
+make_female_race_analysis
+
+```
+
+<h2> Including Plots</h2>
+
+<p> </p>
+
+
+```{r pressure, warning=FALSE, echo=FALSE, message=FALSE}
+Female_plot
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r echo=FALSE}
+Map
+```
